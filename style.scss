@@ -1,0 +1,28 @@
+//measurements px = Monkey, rem AKA relative unit, 1rem=10px,  vw = viewpoint width, vh = viewport height
+
+body {
+  height: 95vh;
+  background-color: (color(primary));
+}
+/*# sourceMappingURL=style.css.map */
+
+$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.header {
+  font-size: 5rem;
+}
