@@ -1,7 +1,17 @@
-body {
+/*body {
   height: 95vh;
-  background-color: color(primary);
+  background-color: (color(primary));
 }
+/*# sourceMappingURL=style.css.map */
+/*$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+*/
 html,
 body {
   margin: 0;
@@ -13,5 +23,31 @@ body {
 
 .header {
   font-size: 5rem;
+  background-image: url(headphones-bg.webp);
+  background-size: cover;
+  height: 100vh;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+  position: relative;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header-primary-main {
+  display: block;
+  font-size: 10 rem;
+}
+
+.header-primary-sub {
+  font-size: 4 rem;
 }
 /*# sourceMappingURL=style.css.map */

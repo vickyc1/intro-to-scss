@@ -1,6 +1,6 @@
 //measurements px = Monkey, rem AKA relative unit, 1rem=10px,  vw = viewpoint width, vh = viewport height
 
-body {
+/*body {
   height: 95vh;
   background-color: (color(primary));
 }
@@ -15,14 +15,49 @@ $colors: (
   @return map-get($colors, $color-name);
 }
 
+$mainFont: "Josefin Sans", sans-serif;
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: $mainfont;
 }
 
 .header {
   font-size: 5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(primary), 0.5),
+      rgba(color(primary-light), 0.5)
+    ),
+    url(headphones-bg.webp);
+  background-size: cover;
+  height: 100vh;
+  //background-position: bottom;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+  position: relative;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-primary-main {
+  display: block;
+  font-size: 10rem;
+  letter-spacing: 1rem;
+  text-shadow: #333 3px 3px;
+}
+.header-primary-sub {
+  font-size: 4rem;
 }
