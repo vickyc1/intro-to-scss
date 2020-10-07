@@ -3,15 +3,6 @@
   background-color: (color(primary));
 }
 /*# sourceMappingURL=style.css.map */
-/*$colors: (
-  primary: #45a29e,
-  primary-light: #66fcf1,
-);
-
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-*/
 html,
 body {
   margin: 0;
@@ -19,11 +10,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .header {
   font-size: 5rem;
-  background-image: url(headphones-bg.webp);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(headphones-bg.webp);
+  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(headphones-bg.webp);
   background-size: cover;
   height: 100vh;
   /*
@@ -40,14 +33,18 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .header-primary-main {
   display: block;
-  font-size: 10 rem;
+  font-size: 10rem;
+  letter-spacing: 1rem;
+  text-shadow: #333 3px 3px;
 }
 
 .header-primary-sub {
-  font-size: 4 rem;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
